@@ -1,0 +1,456 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<style>
+  .head1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .card123{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .card1234{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+</style>
+
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Jquery -->
+<body>
+ 
+    <!-- Navigation Bar -->
+      <div class="nav_bar w-full h-[80px]  flex justify-between items-center px-[20px] border-b-2 border-b-gray-500">
+        <div class="nav_left w-[200px] md:w-auto h-[100%]  flex justify-start md:justify-center items-center">
+          <div class=""><img src="./photo/logo.svg" class="hover:cursor-pointer" alt=""></div>
+        </div>
+        <div class="nav_right w-auto h-[100%] hidden md:flex justify-center items-center gap-[25px] text-xl">
+          <div class="text-[#FF6838]">Home</div>
+          <div class="hover:text-[#FF6838] hover:cursor-pointer">Service</div>
+          <div class="hover:text-[#FF6838] hover:cursor-pointer">Top cities</div>
+          <div class="hover:text-[#FF6838] hover:cursor-pointer">Contract</div>
+          <div class="hover:text-[#FF6838] hover:cursor-pointer"><i class="ri-search-line"></i></div>
+          <div class="hover:text-[#FF6838] hover:cursor-pointer"><i class="ri-shopping-cart-line"></i></div>
+          <div class="hover:text-[#FF6838] hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:cursor-pointer bg-[#FF6838] p-[4px_15px] rounded-[40px] text-white">Sign Up</div>
+        </div>
+        <div class="Side_menu_icon md:hidden flex justify-end items-center text-4xl w-[50px] h-[100%]">
+          <i class="ri-function-line"></i>
+        </div>
+      </div>
+      <!-- Side_Nav -->
+       <div class="side_nav w-full h-auto flex justify-center items-center flex-col">
+        <div class="text-[#FF6838] w-full flex justify-center items-center font-semibold text-xl p-[20px_0px] border-b-2 border-black hover:bg-black">Home</div>
+        <div class=" w-full flex justify-center items-center font-semibold text-xl p-[20px_0px] border-b-2 border-black hover:bg-black hover:text-[#FF6838]">Service</div>
+        <div class=" w-full flex justify-center items-center font-semibold text-xl p-[20px_0px] border-b-2 border-black hover:bg-black hover:text-[#FF6838]">Top cities</div>
+        <div class=" w-full flex justify-center items-center font-semibold text-xl p-[20px_0px] border-b-2 border-black hover:bg-black hover:text-[#FF6838]">Contract</div>
+       </div>
+      <!-- Side_Nav -->
+    <!-- Navigation Bar -->
+
+    <!-- Hero Section -->
+    <div class="w-full h-[100vh] sm:h-[50vh] md:h-[50vh] lg:h-[90vh] flex flex-col sm:flex-row">
+      <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%]  flex justify-center items-center order-5 sm:order-2">
+        <div class="w-[100%] h-[100%] lg:w-[90%] lg:h-[90%]  flex justify-center items-start flex-col px-[10px] space-y-6">
+           <div class="head1 text-4xl sm:text-4xl md:text-5xl text-[#363853] lg:text-6xl font-bold">super fast <span class="text-[#FF6838]">Food <br> delivery</span> service</div>
+           <div class="sm:text-xl text-gray-500">We provide super fast-delivery service. Let’s use our services right now and get discounts of up to 50%</div>
+           <div class="btns flex justify-center items-center gap-[15px]">
+            <div class="w-[120px] h-[40px] flex justify-center items-center bg-[#FF6838] text-white rounded-[10px] hover:text-[#FF6838] hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:cursor-pointer">Explore Food</div>
+            <div class="w-[120px] h-[40px] flex justify-center items-center border-2 border-black hover:text-[#FF6838] hover:border-[#FF6838] rounded-[10px] hover:cursor-pointer">Download App</div>
+           </div>
+        </div>
+      </div>
+      <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%] flex justify-center items-center order-4 sm:order-3">
+      <img src="./photo/hero_section.svg" class="w-[100%] h-[100%] object-contain" alt="">
+      </div>
+    </div>
+    <!-- Hero Section -->
+
+    <!-- Section 2 -->
+     <div class="head1 w-full h-[100px] my-[20px] flex justify-center items-center text-3xl sm:text-5xl font-bold text-[#363853]">Our  Popular <span class="text-[#FF6838] pl-[10px]"> Category</span></div>
+    <!-- Section 2 -->
+
+    <!-- Section 3 -->
+     <div class="w-full h-auto my-[10px] flex justify-center items-center gap-[20px] flex-wrap">
+      <div class="w-[200px] h-[70px] rounded-[10px] bg-[#FF6838] text-white flex  hover:cursor-pointer justify-center items-center gap-[10px]">
+        <div class=""><img src="./photo/n1.svg" alt=""></div>
+        <div class="text-2xl">Burger</div>
+      </div>
+      <div class="w-[200px] h-[70px] rounded-[10px] border-[3px] border-[#FF6838] hover:cursor-pointer  hover:bg-[#FF6838] hover:text-white flex justify-center items-center gap-[10px]">
+        <div class=""><img src="./photo/n2.svg" alt=""></div>
+        <div class="text-2xl">Pizza</div>
+      </div>
+      <div class="w-[200px] h-[70px] rounded-[10px] border-[3px] border-[#FF6838] hover:cursor-pointer  hover:bg-[#FF6838] hover:text-white flex justify-center items-center gap-[10px]">
+        <div class=""><img src="./photo/n3.svg" alt=""></div>
+        <div class="text-2xl">sandwich</div>
+      </div>
+      <div class="w-[200px] h-[70px] rounded-[10px] border-[3px] border-[#FF6838] hover:cursor-pointer  hover:bg-[#FF6838] hover:text-white flex justify-center items-center gap-[10px]">
+        <div class=""><img src="./photo/n4.svg" alt=""></div>
+        <div class="text-2xl">Asian Food</div>
+      </div>
+      <div class="w-[200px] h-[70px] rounded-[10px] border-[3px] border-[#FF6838] hover:cursor-pointer  hover:bg-[#FF6838] hover:text-white flex justify-center items-center gap-[10px]">
+        <div class=""><img src="./photo/n5.svg" alt=""></div>
+        <div class="text-2xl">Set Menu</div>
+      </div>
+     </div>
+    <!-- Section 3 -->
+
+    <!-- Section4 -->
+     <div class="w-full h-auto my-[20px] flex justify-center items-center gap-[20px] flex-wrap">
+      <div class="card123 w-[200px] h-[300px] flex justify-center items-center flex-col">
+        <div class="img1 h-[145px]"><img src="./photo/b1.svg" alt=""></div>
+        <div class="content flex justify-center items-center flex-col space-y-2">
+          <div class="stars text-yellow-300 text-xl">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div class="text-gray-500">Cheeseburger With Salad</div>
+          <div class="text-xl text-[#363853]">$18.00</div>
+          <div class="w-[100px] h-[30px] bg-[#FF7A50] flex justify-center items-center rounded-[5px] hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:cursor-pointer hover:text-[#FF6838]">Add to Cart</div>
+        </div>
+      </div>
+      <div class="card123 w-[200px] h-[300px] flex justify-center items-center flex-col">
+        <div class="img1"><img src="./photo/b2.svg" alt=""></div>
+        <div class="content flex justify-center items-center flex-col space-y-2">
+          <div class="stars text-yellow-300 text-xl">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div class="text-gray-500">Beef Burger</div>
+          <div class="text-xl text-[#363853]">$13.00</div>
+          <div class="w-[100px] h-[30px] bg-[#FF7A50] flex justify-center items-center rounded-[5px] hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:cursor-pointer hover:text-[#FF6838]">Add to Cart</div>
+        </div>
+      </div>
+      <div class="card123 w-[200px] h-[300px] flex justify-center items-center flex-col">
+        <div class="img1"><img src="./photo/b3.svg" alt=""></div>
+        <div class="content flex justify-center items-center flex-col space-y-2">
+          <div class="stars text-yellow-300 text-xl">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div class="text-gray-500">Royel Cheeseburger</div>
+          <div class="text-xl text-[#363853]">$19.00</div>
+          <div class="w-[100px] h-[30px] bg-[#FF7A50] flex justify-center items-center rounded-[5px] hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:cursor-pointer hover:text-[#FF6838]">Add to Cart</div>
+        </div>
+      </div>
+      <div class="card123 w-[200px] h-[300px] flex justify-center items-center flex-col">
+        <div class="img1"><img src="./photo/b4.svg" alt=""></div>
+        <div class="content flex justify-center items-center flex-col space-y-2">
+          <div class="stars text-yellow-300 text-xl">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div class="text-gray-500">Black Gambugrer </div>
+          <div class="text-xl text-[#363853]">$14.00</div>
+          <div class="w-[100px] h-[30px] bg-[#FF7A50] flex justify-center items-center rounded-[5px] hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:cursor-pointer hover:text-[#FF6838]">Add to Cart</div>
+        </div>
+      </div>
+      <div class="card123 w-[200px] h-[300px] flex justify-center items-center flex-col">
+        <div class="img1"><img src="./photo/b5.svg" alt=""></div>
+        <div class="content flex justify-center items-center flex-col space-y-2">
+          <div class="stars text-yellow-300 text-xl">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <div class="text-gray-500">Chicken Burger</div>
+          <div class="text-xl text-[#363853]">$15.00</div>
+          <div class="w-[100px] h-[30px] bg-[#FF7A50] flex justify-center items-center rounded-[5px] hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:cursor-pointer hover:text-[#FF6838]">Add to Cart</div>
+        </div>
+      </div>
+     </div>
+    <!-- Section4 -->
+
+    <!-- Section 5 -->
+     <div class="w-full h-auto my-[20px] flex justify-center items-center gap-[0px_10px] flex-wrap">
+          <div class="w-[400px] h-[470px]">
+            <img src="./photo/food delivery 4.svg" class470px[100%] h-[100%]" alt="">
+          </div>
+          <div class="w-[400px] h-[470px] pl-[10px] flex flex-col justify-center items-center space-y-4">
+            <div class="text-4xl font-bold text-[#363853]"><span class="text-[#FF7A50]">Stay</span> at home, we will Provide <span class="text-[#FF7A50]">good food</span> </div>
+            <div class="text-[#363853] text-xl">We provide tasty food and superfast delivery at your home.  Let’s use our services right now and get discounts of up to 50%.</div>
+            <div class="list flex flex-col gap-[15px_0px]">
+              <div class="list1 flex justify-start items-center">
+                <div class=""><img src="./photo/e1.svg" alt=""></div>
+                <div class="text-[#363853] text-xl">fasted delivery in 30 Minutes</div>
+              </div>
+              <div class="list1 flex justify-start items-center">
+                <div class=""><img src="./photo/e2.svg" alt=""></div>
+                <div class="text-[#363853] text-xl">300+ delivery men</div>
+              </div>
+              <div class="list1 flex justify-start   items-center">
+                <div class=""><img src="./photo/e3.svg" alt=""></div>
+                <div class="text-[#363853] text-xl">500+ restaurant & cafe shop</div>
+              </div>
+            </div>
+            <div class="text-white bg-[#FF7A50] rounded-[5px] w-[100px] h-[35px] flex justify-center items-center hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:text-[#FF6838]">See more</div>
+          </div>
+     </div>
+    <!-- Section 5 -->
+
+    <!-- Section 6 -->
+    <div class="head1 w-full h-[100px] my-[20px] flex justify-center items-center text-3xl sm:text-5xl font-bold text-[#363853]"> Top Food  <span class="text-[#FF6838] pl-[10px]">restaurant</span></div>
+    <!-- Section 6 -->
+
+    <!-- Section 7 -->
+     <div class="w-full lg:w-[80%] m-auto h-auto  my-[20px] flex justify-center items-center flex-wrap gap-[20px_40px] px-[30px]">
+
+        <div class="w-[280px] h-[330px]">
+          <div class="img1">
+            <img src="./photo/i1.svg" class="w-[100%] h-[100%]" alt="">
+          </div>
+          <div class="card1234 content w-[100%] h-[90px] space-y-2">
+            <div class="text-xl font-semibold text-[#363853] pt-[10px] pl-[10px]">Blaze Pizza</div>
+            <div class="flex justify-between px-[5px] items-center">
+              <div class="flex justify-center items-center gap-[5px]">
+                <div class="text-2xl"><i class="ri-time-line"></i></div>
+                <div class="text-[#363853] text-xl">11.00 AM - 10.00 PM</div>
+              </div>
+              <div class="w-[50px] h-[30px] text-white  bg-[#FF7A50] rounded-[30px] text-3xl flex justify-center items-center"><i class="ri-arrow-right-line"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[280px] h-[330px]">
+          <div class="img1">
+            <img src="./photo/i2.svg" class="w-[100%] h-[100%]" alt="">
+          </div>
+          <div class="card1234 content w-[100%] h-[90px] space-y-2">
+            <div class="text-xl font-semibold text-[#363853] pt-[10px] pl-[10px]">Pizza Ranch</div>
+            <div class="flex justify-between px-[5px] items-center">
+              <div class="flex justify-center items-center gap-[5px]">
+                <div class="text-2xl"><i class="ri-time-line"></i></div>
+                <div class="text-[#363853] text-xl">09.00 AM - 10.00 PM</div>
+              </div>
+              <div class="w-[50px] h-[30px] text-white  bg-[#FF7A50] rounded-[30px] text-3xl flex justify-center items-center"><i class="ri-arrow-right-line"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[280px] h-[330px]">
+          <div class="img1">
+            <img src="./photo/i3.svg" class="w-[100%] h-[100%]" alt="">
+          </div>
+          <div class="card1234 content w-[100%] h-[90px] space-y-2">
+            <div class="text-xl font-semibold text-[#363853] pt-[10px] pl-[10px]">	Dion’s Pizza Hut</div>
+            <div class="flex justify-between px-[5px] items-center">
+              <div class="flex justify-center items-center gap-[5px]">
+                <div class="text-2xl"><i class="ri-time-line"></i></div>
+                <div class="text-[#363853] text-xl">10.00 AM - 12.00 PM</div>
+              </div>
+              <div class="w-[50px] h-[30px] text-white  bg-[#FF7A50] rounded-[30px] text-3xl flex justify-center items-center"><i class="ri-arrow-right-line"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[280px] h-[330px]">
+          <div class="img1">
+            <img src="./photo/i4.svg" class="w-[100%] h-[100%]" alt="">
+          </div>
+          <div class="card1234 content w-[100%] h-[90px] space-y-2">
+            <div class="text-xl font-semibold text-[#363853] pt-[10px] pl-[10px]">Royel Burger</div>
+            <div class="flex justify-between px-[5px] items-center">
+              <div class="flex justify-center items-center gap-[5px]">
+                <div class="text-2xl"><i class="ri-time-line"></i></div>
+                <div class="text-[#363853] text-xl">11.00 AM - 10.00 PM</div>
+              </div>
+              <div class="w-[50px] h-[30px] text-white  bg-[#FF7A50] rounded-[30px] text-3xl flex justify-center items-center"><i class="ri-arrow-right-line"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[280px] h-[330px]">
+          <div class="img1">
+            <img src="./photo/i5.svg" class="w-[100%] h-[100%]" alt="">
+          </div>
+          <div class="card1234 content w-[100%] h-[90px] space-y-2">
+            <div class="text-xl font-semibold text-[#363853] pt-[10px] pl-[10px]">KFC Restaurant</div>
+            <div class="flex justify-between px-[5px] items-center">
+              <div class="flex justify-center items-center gap-[5px]">
+                <div class="text-2xl"><i class="ri-time-line"></i></div>
+                <div class="text-[#363853] text-xl">09.00 AM - 10.00 PM</div>
+              </div>
+              <div class="w-[50px] h-[30px] text-white  bg-[#FF7A50] rounded-[30px] text-3xl flex justify-center items-center"><i class="ri-arrow-right-line"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[280px] h-[330px]">
+          <div class="img1">
+            <img src="./photo/i6.svg" class="w-[100%] h-[100%]" alt="">
+          </div>
+          <div class="card1234 content w-[100%] h-[90px] space-y-2">
+            <div class="text-xl font-semibold text-[#363853] pt-[10px] pl-[10px]">Star Food</div>
+            <div class="flex justify-between px-[5px] items-center">
+              <div class="flex justify-center items-center gap-[5px]">
+                <div class="text-2xl"><i class="ri-time-line"></i></div>
+                <div class="text-[#363853] text-xl">10.00 AM - 12.00 PM</div>
+              </div>
+              <div class="w-[50px] h-[30px] text-white  bg-[#FF7A50] rounded-[30px] text-3xl flex justify-center items-center"><i class="ri-arrow-right-line"></i></div>
+            </div>
+          </div>
+        </div>
+       
+
+     </div>
+    <!-- Section 7 -->
+
+    <!-- Section 8 -->
+    <div class="w-full h-auto my-[30px] flex justify-center items-center gap-[0px_10px] flex-wrap">
+      <div class="w-[400px] h-auto flex justify-center items-center md:order-4">
+        <img src="./photo/Group 178.svg" class470px[100%] h-[100%]" alt="">
+      </div>
+      <div class="w-[400px] h-[470px] pl-[10px] flex flex-col justify-center items-center space-y-4 md:order-3">
+         
+        <div class="text-4xl font-bold text-[#363853]">Download  Our <span class="text-[#FF7A50]"> Mobile App </span></div>
+        <div class="text-[#363853]">It's all at your fingertips -- the restaurants you love. Find the right food to suit your mood, and make the first bite last. Go ahead, download app and get 50% discount</div>
+        <div class="flex justify-center items-center gap-[10px]">
+          <div class=""><img src="./photo/Store=App Store, Style=Black.svg" alt=""></div>
+          <div class=""><img src="./photo/Store=Google Play, Style=Black.svg" alt=""></div>
+        </div>
+        
+        <div class="text-white bg-[#FF7A50] rounded-[5px] w-[100px] h-[35px] flex justify-center items-center hover:bg-transparent hover:border-2 hover:border-[#FF6838] hover:text-[#FF6838]">See more</div>
+      </div>
+    </div>
+    <!-- Section 8 -->
+    
+    <div class="head1 w-full h-[100px] my-[20px] flex justify-center items-center text-3xl sm:text-5xl font-bold text-[#363853]">What Our Client Are<span class="text-[#FF6838] pl-[10px]"> Saying</span></div>
+
+    <!-- Section 9 -->
+
+  
+    <div class="w-full h-auto my-[20px] mb-[30px] flex justify-center items-center gap-[0px_10px] flex-wrap">
+      <div class="w-[400px] h-auto">
+        <img src="./photo/Rectangle 8.svg" class="w-[100%] h-[100%]" alt="">
+      </div>
+      <div class="w-[400px] h-auto pl-[15px] flex flex-col justify-center items-center space-y-4">
+      
+        <div class="text-left text-[#363853]"><span class="text-3xl"><i class="ri-double-quotes-l"></i></span> EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now I never had to guide them to my address for delivery <span class="text-3xl"><i class="ri-double-quotes-r"></i></span> </div>
+  
+        <div class="w-full">
+          <div class="text-[#FF7A50] text-left text-xl font-semibold">Anglina Jole</div>
+        </div>
+      </div>
+ </div>
+
+
+    <!-- Section 9 -->    
+    <!-- Section 10 -->
+    
+    <div class="w-full h-auto mb-[10px] flex justify-center items-center flex-col">
+      <div class="w-[95%] sm:w-[80%] py-[50px] flex justify-center items-center flex-col bg-[#FF7A50] rounded-[30px] space-y-4 px-[10px]">
+       <div class="text-white text-4xl text-center font-bold">Subscribe to get the Latest Offer</div>
+        <div class=" text-white text-center md:text-xl">Get our daily updates by subscribing to our newspaper, please drop your email below</div>
+
+       <div class="w-[90%] sm:w-[80%] h-[60px] bg-white flex justify-between items-center px-[10px] rounded-[50px]">
+
+          <div class="w-full sm:w-[70%] md:w-[80%] lg:w-[70%] h-[100%] flex justify-center items-center"><input type="text" placeholder="Enter your email addres" class="w-[100%] h-[90%] rounded-[50px] border-none outline-none"></div>
+          <div class="w-[100px] sm:w-[100px] md:w-[150px] h-[80%] flex justify-center items-center bg-[#FF7A50] rounded-[50px] p-[0px_15px] text-white">Subscribe</div>
+
+       </div>
+
+      </div>
+    </div>
+
+    <!-- Section 10 -->
+
+    <!-- Section 11 -->
+     <div class="fot w-full h-auto bg-black flex justify-center items-center flex-wrap gap-[30px_40px] py-[20px]">
+
+       <div class="w-[250px] h-[100%]  space-y-3 flex flex-col justify-center items-center text-white mb-[10px]">
+         <div class=""><img src="./photo/logo.svg" class="cursor-pointer" alt=""></div>
+         <div class="space-y-3 font-light">
+           <div class="flex justify-start items-center gap-[0px_10px] hover:text-[#FF6838]">
+             <div class="text-xl"><i class="ri-map-pin-line"></i></div>
+             <div class="text-xl">Dhaka, Bangladesh</div>
+            </div>
+            <div class="flex justify-start items-center gap-[0px_10px] hover:text-[#FF6838]">
+              <div class="text-xl"><i class="ri-phone-line"></i></div>
+              <div class="text-xl">0943833399</div>
+            </div>
+            <div class="flex justify-start items-center gap-[0px_10px] hover:text-[#FF6838]">
+              <div class="text-xl"><i class="ri-mail-line"></i></div>
+              <div class="text-xl">support@efood.com</div>
+            </div>
+            <div class="flex justify-start items-center gap-[0px_10px]">
+              <div class="text-xl p-[6px_12px] rounded-[50px] bg-white text-black"><i class="ri-facebook-fill hover:cursor-pointer"></i></div>
+              <div class="text-xl p-[6px_12px] rounded-[50px] bg-white text-black"><i class="ri-twitter-fill hover:cursor-pointer"></i></div>
+              <div class="text-xl p-[6px_12px] rounded-[50px] bg-white text-black"><i class="ri-instagram-fill hover:cursor-pointer"></i></div>
+              <div class="text-xl p-[6px_12px] rounded-[50px] bg-white text-black"><i class="ri-pinterest-fill hover:cursor-pointer"></i></div>
+            </div>
+        </div>
+       </div>
+
+
+       <div class="w-[200px] h-[100%]  flex justify-center items-center flex-col space-y-3 text-white text-xl font-light mb-[10px]">
+
+         <div class="text-2xl font-bold text-[#FF7A50] hover:cursor-pointer">Service</div>
+         <div class="hover:text-[#FF6838] hover:cursor-pointer">How it works</div>
+         <div class="hover:text-[#FF6838] hover:cursor-pointer">Home delivery</div>
+         <div class="hover:text-[#FF6838] hover:cursor-pointer">Prducts</div>
+         <div class="hover:text-[#FF6838] hover:cursor-pointer">Menu</div>
+
+       </div>
+       <div class="w-[200px] h-[100%]  flex justify-center items-center flex-col space-y-3 text-white text-xl font-light mb-[10px]">
+        <div class="text-2xl font-bold text-[#FF7A50] hover:cursor-pointer">Company</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">About Us</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">News</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">Our trusted partner</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">New users FAQ</div>
+
+       </div>
+       <div class="w-[200px] h-[100%]  flex justify-center items-center flex-col space-y-3 text-white text-xl font-light mb-[10px]">
+    
+        <div class="text-2xl font-bold text-[#FF7A50] hover:cursor-pointer"> Supports</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">Help center</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">Feedbcak</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">Contact us</div>
+        <div class="hover:text-[#FF6838] hover:cursor-pointer">Terms conditins</div>
+       </div>
+
+
+       <div class="w-[200px] h-[100%]  flex justify-center items-center flex-col space-y-3 text-white text-xl font-light mb-[10px]">
+
+             <div class="text-2xl font-bold text-[#FF7A50] hover:cursor-pointer"> Resources</div>
+             <div class="hover:text-[#FF6838] hover:cursor-pointer">Download app</div>
+             <div class="hover:text-[#FF6838] hover:cursor-pointer">Blog</div>
+             <div class="hover:text-[#FF6838] hover:cursor-pointer">What’s new</div>
+             <div class="hover:text-[#FF6838] hover:cursor-pointer">Sitemap</div>
+
+       </div>
+
+     </div>
+    <!-- Section 11 -->
+
+</body>
+<script>
+  jQuery.noConflict();
+  jQuery(document).ready(function($){
+
+    $(".side_nav").hide();
+
+    $(".ri-function-line").click(function(){
+      $(".side_nav").slideToggle(700);
+    })
+
+  })
+</script>
+</html>
